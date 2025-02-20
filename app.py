@@ -15,7 +15,7 @@ def healthcare_chatbot(user_input):
     elif "medication" in user_input:
         return "It's important to take prescribed medicines regularly. If you have concerns, consult your doctor."
     else:
-        response = chatbot(user_input,max_length = 500, num_return_sequences = 1)
+        response = chatbot(user_input,max_length = 100, num_return_sequences = 1)
         return response[0]['generated_text']
     
 
